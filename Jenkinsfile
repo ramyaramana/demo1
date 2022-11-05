@@ -1,9 +1,10 @@
 pipeline{
   agent any
   stages{
-    stage(trial) {
+    stage(build) {
       steps {
         echo "this is trial"
+        sh "mvn clean install"
       }
     }  
   }
