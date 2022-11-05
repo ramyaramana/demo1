@@ -9,7 +9,7 @@ pipeline{
       stage (run){
        steps {
         echo "this is trial"
-        java -jar "target/*.jar
+        java -jar "target/*.jar"
       }
     }  
   }
