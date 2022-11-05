@@ -6,6 +6,7 @@ pipeline{
         echo "this is trial"
         sh "mvn clean install"
       }
+      stage (run){
        steps {
         echo "this is trial"
         java -jar "target/*.jar
