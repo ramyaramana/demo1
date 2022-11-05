@@ -6,11 +6,12 @@ pipeline{
         echo "this is trial"
         sh "mvn clean install"
       }
+    }
       stage (run){
        steps {
         echo "this is trial"
         sh "deliver.sh"
-         echo "thia ia my sec trial"
+        echo "thia ia my sec trial"
       }
     }  
   }
